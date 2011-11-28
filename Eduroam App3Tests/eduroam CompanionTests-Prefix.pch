@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Eduroam App3Tests' target in the 'Eduroam App3Tests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

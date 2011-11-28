@@ -1,0 +1,1049 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E17E4EC13350CF000D174D0 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E17E4EB13350CF000D174D0 /* InitViewController.m */; };
+		5E17E4EE13350E7700D174D0 /* InitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E17E4ED13350E7700D174D0 /* InitView.xib */; };
+		5E17E5451335605800D174D0 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E17E5441335605700D174D0 /* DatabaseManager.m */; };
+		5E17E5481335612100D174D0 /* NetworkJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E17E5471335612000D174D0 /* NetworkJSON.m */; };
+		5E3CBE56135877C00028BE7F /* LoadOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CBE55135877C00028BE7F /* LoadOverlay.m */; };
+		5E4819C21352124F00851F67 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4819C11352124F00851F67 /* NetworkManager.m */; };
+		5E4819CE1353009A00851F67 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4819CD1353009A00851F67 /* Reachability.m */; };
+		5E4819D013530EDC00851F67 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4819CF13530EDC00851F67 /* SystemConfiguration.framework */; };
+		5E4819DE13532B8600851F67 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4819D513532B8600851F67 /* NSObject+SBJSON.m */; };
+		5E4819DF13532B8600851F67 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4819D713532B8600851F67 /* NSString+SBJSON.m */; };
+		5E4819E013532B8600851F67 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4819D913532B8600851F67 /* SBJsonBase.m */; };
+		5E4819E113532B8600851F67 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4819DB13532B8600851F67 /* SBJsonParser.m */; };
+		5E4819E213532B8600851F67 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4819DD13532B8600851F67 /* SBJsonWriter.m */; };
+		5E4D67471366048D0027971A /* eduroamSites.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D67451366048D0027971A /* eduroamSites.png */; };
+		5E4D67481366048D0027971A /* eduroamSites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D67461366048D0027971A /* eduroamSites@2x.png */; };
+		5E4D674C1366088C0027971A /* eduroamTag.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D674A1366088C0027971A /* eduroamTag.png */; };
+		5E4D674D1366088C0027971A /* eduroamTag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D674B1366088C0027971A /* eduroamTag@2x.png */; };
+		5E4D675013660B200027971A /* mapicon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D674E13660B200027971A /* mapicon1.png */; };
+		5E4D675113660B200027971A /* mapicon1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D674F13660B200027971A /* mapicon1@2x.png */; };
+		5E4D675413660FD60027971A /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D675213660FD60027971A /* background1.png */; };
+		5E4D675513660FD60027971A /* background1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D675313660FD60027971A /* background1@2x.png */; };
+		5E4D675A1366F21B0027971A /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D67561366F21B0027971A /* hi.png */; };
+		5E4D675B1366F21B0027971A /* hi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D67571366F21B0027971A /* hi@2x.png */; };
+		5E4D675C1366F21B0027971A /* lo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D67581366F21B0027971A /* lo.png */; };
+		5E4D675D1366F21B0027971A /* lo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D67591366F21B0027971A /* lo@2x.png */; };
+		5E4F502D1354480800173E71 /* TagPickSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F502B1354480800173E71 /* TagPickSiteViewController.m */; };
+		5E4F502E1354480800173E71 /* TagPickSiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F502C1354480800173E71 /* TagPickSiteViewController.xib */; };
+		5E4F50321354489500173E71 /* TagCheckLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F50301354489500173E71 /* TagCheckLocationViewController.m */; };
+		5E4F50331354489500173E71 /* TagCheckLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F50311354489500173E71 /* TagCheckLocationViewController.xib */; };
+		5E4F50351354AFF100173E71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4F50341354AFF000173E71 /* QuartzCore.framework */; };
+		5E4F50391354C92300173E71 /* GeneralButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F50381354C92300173E71 /* GeneralButton.m */; };
+		5E4F50461355B81E00173E71 /* DDAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F50431355B81C00173E71 /* DDAnnotation.m */; };
+		5E4F50471355B81E00173E71 /* DDAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F50451355B81D00173E71 /* DDAnnotationView.m */; };
+		5E4F504E1355C11500173E71 /* Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F50481355C11500173E71 /* Pin.png */; };
+		5E4F504F1355C11500173E71 /* PinDown1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F50491355C11500173E71 /* PinDown1.png */; };
+		5E4F50501355C11500173E71 /* PinDown2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F504A1355C11500173E71 /* PinDown2.png */; };
+		5E4F50511355C11500173E71 /* PinDown3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F504B1355C11500173E71 /* PinDown3.png */; };
+		5E4F50521355C11500173E71 /* PinFloating.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F504C1355C11500173E71 /* PinFloating.png */; };
+		5E4F50531355C11500173E71 /* PinShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4F504D1355C11500173E71 /* PinShadow.png */; };
+		5E522346134DBBCB00C6940C /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E522345134DBBCB00C6940C /* LocationManager.m */; };
+		5E52234D134DCC9F00C6940C /* apmarker4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E52234B134DCC9E00C6940C /* apmarker4@2x.png */; };
+		5E52234E134DCC9F00C6940C /* sitemarker4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E52234C134DCC9E00C6940C /* sitemarker4@2x.png */; };
+		5E522351134DE06300C6940C /* YouAreHereAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E522350134DE06200C6940C /* YouAreHereAnnotation.m */; };
+		5E522354134E367E00C6940C /* gps.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E522352134E367E00C6940C /* gps.png */; };
+		5E522355134E367E00C6940C /* gps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E522353134E367E00C6940C /* gps@2x.png */; };
+		5E52235C134E493100C6940C /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E52235A134E493100C6940C /* table.png */; };
+		5E52235D134E493100C6940C /* table@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E52235B134E493100C6940C /* table@2x.png */; };
+		5E72220C1376D6110073BF85 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E72220A1376D6110073BF85 /* Icon.png */; };
+		5E72220D1376D6110073BF85 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E72220B1376D6110073BF85 /* Icon@2x.png */; };
+		5E752858134CD97100B2C2B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E752857134CD97100B2C2B3 /* CoreLocation.framework */; };
+		5EA1BA681332716E00CA6C95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1BA671332716E00CA6C95 /* UIKit.framework */; };
+		5EA1BA6A1332716E00CA6C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1BA691332716E00CA6C95 /* Foundation.framework */; };
+		5EA1BA6C1332716E00CA6C95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1BA6B1332716E00CA6C95 /* CoreGraphics.framework */; };
+		5EA1BA721332716E00CA6C95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BA701332716E00CA6C95 /* InfoPlist.strings */; };
+		5EA1BA751332716E00CA6C95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1BA741332716E00CA6C95 /* main.m */; };
+		5EA1BA781332716E00CA6C95 /* eduroamCompanionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1BA771332716E00CA6C95 /* eduroamCompanionAppDelegate.m */; };
+		5EA1BA7B1332716E00CA6C95 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BA791332716E00CA6C95 /* MainWindow.xib */; };
+		5EA1BA821332716E00CA6C95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1BA671332716E00CA6C95 /* UIKit.framework */; };
+		5EA1BA831332716E00CA6C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1BA691332716E00CA6C95 /* Foundation.framework */; };
+		5EA1BA841332716E00CA6C95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1BA6B1332716E00CA6C95 /* CoreGraphics.framework */; };
+		5EA1BA8C1332716E00CA6C95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BA8A1332716E00CA6C95 /* InfoPlist.strings */; };
+		5EA1BA8F1332716E00CA6C95 /* Eduroam_App3Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BA8E1332716E00CA6C95 /* Eduroam_App3Tests.h */; };
+		5EA1BA911332716E00CA6C95 /* Eduroam_App3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1BA901332716E00CA6C95 /* Eduroam_App3Tests.m */; };
+		5EA1BA9B13334D9100CA6C95 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BA9A13334D9100CA6C95 /* default.png */; };
+		5EA1BA9F13334E9400CA6C95 /* TagCheckSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1BA9D13334E9300CA6C95 /* TagCheckSiteViewController.m */; };
+		5EA1BAA013334E9400CA6C95 /* TagCheckSiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BA9E13334E9400CA6C95 /* TagCheckSiteViewController.xib */; };
+		5EA1BAA41333531F00CA6C95 /* MapNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1BAA31333531F00CA6C95 /* MapNavController.m */; };
+		5EA1BAA81333544500CA6C95 /* SiteSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1BAA71333544500CA6C95 /* SiteSelectionViewController.m */; };
+		5EA1BAAA1333581200CA6C95 /* SiteSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BAA91333581200CA6C95 /* SiteSelectionView.xib */; };
+		5EA1BAAC133358DA00CA6C95 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA1BAAB133358DA00CA6C95 /* MapKit.framework */; };
+		5EA1BAF9133361CB00CA6C95 /* SiteDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA1BAF8133361CA00CA6C95 /* SiteDetailsViewController.m */; };
+		5EA1BAFB1333622400CA6C95 /* SiteDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA1BAFA1333622300CA6C95 /* SiteDetails.xib */; };
+		5EB5C6C813648E29001FF04A /* PermissionOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5C6C713648E29001FF04A /* PermissionOverlay.m */; };
+		5EB5C6CC1364A5E3001FF04A /* APDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5C6CA1364A5E3001FF04A /* APDetailsViewController.m */; };
+		5EB5C6CD1364A5E3001FF04A /* APDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB5C6CB1364A5E3001FF04A /* APDetails.xib */; };
+		5EB6CDD6135EF313000A2B51 /* eduroamnegsmalltrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6CDD4135EF313000A2B51 /* eduroamnegsmalltrans.png */; };
+		5EB6CDD7135EF313000A2B51 /* eduroamnegsmalltrans@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB6CDD5135EF313000A2B51 /* eduroamnegsmalltrans@2x.png */; };
+		5EBB804B1342082A00E15DA1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBB804A1342082A00E15DA1 /* libsqlite3.0.dylib */; };
+		5EE4A734137BF1A600F7E4F2 /* infotabbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A732137BF1A600F7E4F2 /* infotabbutton.png */; };
+		5EE4A735137BF1A600F7E4F2 /* infotabbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A733137BF1A600F7E4F2 /* infotabbutton@2x.png */; };
+		5EE4A73C137BF1B200F7E4F2 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A737137BF1B200F7E4F2 /* Icon-72.png */; };
+		5EE4A73D137BF1B200F7E4F2 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A738137BF1B200F7E4F2 /* Icon-Small-50.png */; };
+		5EE4A73E137BF1B200F7E4F2 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A739137BF1B200F7E4F2 /* Icon-Small.png */; };
+		5EE4A73F137BF1B200F7E4F2 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A73A137BF1B200F7E4F2 /* Icon-Small@2x.png */; };
+		5EE4A740137BF1B200F7E4F2 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A73B137BF1B200F7E4F2 /* iTunesArtwork.png */; };
+		5EE4A745137BF61400F7E4F2 /* InfoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4A743137BF61400F7E4F2 /* InfoMainViewController.m */; };
+		5EE4A746137BF61400F7E4F2 /* InfoMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A744137BF61400F7E4F2 /* InfoMain.xib */; };
+		5EE4A797137C1F9900F7E4F2 /* info.css in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A795137C1F9900F7E4F2 /* info.css */; };
+		5EE4A798137C1F9900F7E4F2 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A796137C1F9900F7E4F2 /* info.html */; };
+		5EE4A79B137C367200F7E4F2 /* janet2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE4A799137C367100F7E4F2 /* janet2x.png */; };
+		5EE7884D1334BC6B009C07BD /* eduroam.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5EE7884C1334BC6B009C07BD /* eduroam.sqlite */; };
+		5EE788501334BCEB009C07BD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE7884F1334BCEB009C07BD /* libsqlite3.dylib */; };
+		5EE788611334C7B1009C07BD /* SiteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE788601334C7B1009C07BD /* SiteAnnotation.m */; };
+		5EF803531345042E00C785A1 /* APAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF803521345042D00C785A1 /* APAnnotations.m */; };
+		5EF803571345056E00C785A1 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF803561345056C00C785A1 /* Annotation.m */; };
+		5EF8035913475CE700C785A1 /* apmarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8035813475CE700C785A1 /* apmarker.png */; };
+		5EF80363134765BF00C785A1 /* john.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EF80362134765BF00C785A1 /* john.jpg */; };
+		5EF80373134893FC00C785A1 /* apmarker2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF80372134893FB00C785A1 /* apmarker2.png */; };
+		5EF803771348963B00C785A1 /* apmarker3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF803741348963B00C785A1 /* apmarker3.png */; };
+		5EF803781348963B00C785A1 /* sitemarker2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF803751348963B00C785A1 /* sitemarker2.png */; };
+		5EF803791348963B00C785A1 /* sitemarker3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF803761348963B00C785A1 /* sitemarker3.png */; };
+		5EF8037D1348C18700C785A1 /* apmarker4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8037B1348C18700C785A1 /* apmarker4.png */; };
+		5EF8037E1348C18700C785A1 /* sitemarker4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8037C1348C18700C785A1 /* sitemarker4.png */; };
+		762B9BF3145EE54B0006A001 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 762B9BF2145EE54B0006A001 /* Settings.bundle */; };
+		762B9BF4145EE54B0006A001 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 762B9BF2145EE54B0006A001 /* Settings.bundle */; };
+		76E82E58144F015800CE2253 /* uos2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E82E57144F015800CE2253 /* uos2x.png */; };
+		76FCB2271483E5F4007DA322 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 76FCB2251483E5F4007DA322 /* COPYING */; };
+		76FCB2281483E5F4007DA322 /* LIBRARIES in Resources */ = {isa = PBXBuildFile; fileRef = 76FCB2261483E5F4007DA322 /* LIBRARIES */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EA1BA851332716E00CA6C95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EA1BA5A1332716E00CA6C95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EA1BA621332716E00CA6C95;
+			remoteInfo = "Eduroam App3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E17E4EA13350CF000D174D0 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
+		5E17E4EB13350CF000D174D0 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
+		5E17E4ED13350E7700D174D0 /* InitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitView.xib; sourceTree = "<group>"; };
+		5E17E54013355FAD00D174D0 /* SynthesiseSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesiseSingleton.h; sourceTree = "<group>"; };
+		5E17E5431335605700D174D0 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		5E17E5441335605700D174D0 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		5E17E5461335612000D174D0 /* NetworkJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkJSON.h; sourceTree = "<group>"; };
+		5E17E5471335612000D174D0 /* NetworkJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkJSON.m; sourceTree = "<group>"; };
+		5E3CBE54135877C00028BE7F /* LoadOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadOverlay.h; sourceTree = "<group>"; };
+		5E3CBE55135877C00028BE7F /* LoadOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadOverlay.m; sourceTree = "<group>"; };
+		5E4819C01352124F00851F67 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		5E4819C11352124F00851F67 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		5E4819CC1353009A00851F67 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5E4819CD1353009A00851F67 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5E4819CF13530EDC00851F67 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5E4819D113532A5200851F67 /* NetworkJSONProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkJSONProtocol.h; sourceTree = "<group>"; };
+		5E4819D313532B8600851F67 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		5E4819D413532B8600851F67 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		5E4819D513532B8600851F67 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		5E4819D613532B8600851F67 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		5E4819D713532B8600851F67 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		5E4819D813532B8600851F67 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		5E4819D913532B8600851F67 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		5E4819DA13532B8600851F67 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		5E4819DB13532B8600851F67 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		5E4819DC13532B8600851F67 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		5E4819DD13532B8600851F67 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		5E4D67451366048D0027971A /* eduroamSites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eduroamSites.png; path = Images/eduroamSites.png; sourceTree = "<group>"; };
+		5E4D67461366048D0027971A /* eduroamSites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "eduroamSites@2x.png"; path = "Images/eduroamSites@2x.png"; sourceTree = "<group>"; };
+		5E4D674A1366088C0027971A /* eduroamTag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eduroamTag.png; path = Images/eduroamTag.png; sourceTree = "<group>"; };
+		5E4D674B1366088C0027971A /* eduroamTag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "eduroamTag@2x.png"; path = "Images/eduroamTag@2x.png"; sourceTree = "<group>"; };
+		5E4D674E13660B200027971A /* mapicon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapicon1.png; path = Images/mapicon1.png; sourceTree = "<group>"; };
+		5E4D674F13660B200027971A /* mapicon1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapicon1@2x.png"; path = "Images/mapicon1@2x.png"; sourceTree = "<group>"; };
+		5E4D675213660FD60027971A /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background1.png; path = Images/background1.png; sourceTree = "<group>"; };
+		5E4D675313660FD60027971A /* background1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background1@2x.png"; path = "Images/background1@2x.png"; sourceTree = "<group>"; };
+		5E4D67561366F21B0027971A /* hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hi.png; path = Images/hi.png; sourceTree = "<group>"; };
+		5E4D67571366F21B0027971A /* hi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hi@2x.png"; path = "Images/hi@2x.png"; sourceTree = "<group>"; };
+		5E4D67581366F21B0027971A /* lo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lo.png; path = Images/lo.png; sourceTree = "<group>"; };
+		5E4D67591366F21B0027971A /* lo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo@2x.png"; path = "Images/lo@2x.png"; sourceTree = "<group>"; };
+		5E4F502A1354480800173E71 /* TagPickSiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagPickSiteViewController.h; sourceTree = "<group>"; };
+		5E4F502B1354480800173E71 /* TagPickSiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagPickSiteViewController.m; sourceTree = "<group>"; };
+		5E4F502C1354480800173E71 /* TagPickSiteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagPickSiteViewController.xib; sourceTree = "<group>"; };
+		5E4F502F1354489500173E71 /* TagCheckLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCheckLocationViewController.h; sourceTree = "<group>"; };
+		5E4F50301354489500173E71 /* TagCheckLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCheckLocationViewController.m; sourceTree = "<group>"; };
+		5E4F50311354489500173E71 /* TagCheckLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCheckLocationViewController.xib; sourceTree = "<group>"; };
+		5E4F50341354AFF000173E71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5E4F50371354C92300173E71 /* GeneralButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralButton.h; sourceTree = "<group>"; };
+		5E4F50381354C92300173E71 /* GeneralButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralButton.m; sourceTree = "<group>"; };
+		5E4F50421355B81B00173E71 /* DDAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAnnotation.h; sourceTree = "<group>"; };
+		5E4F50431355B81C00173E71 /* DDAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotation.m; sourceTree = "<group>"; };
+		5E4F50441355B81C00173E71 /* DDAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAnnotationView.h; sourceTree = "<group>"; };
+		5E4F50451355B81D00173E71 /* DDAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotationView.m; sourceTree = "<group>"; };
+		5E4F50481355C11500173E71 /* Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin.png; sourceTree = "<group>"; };
+		5E4F50491355C11500173E71 /* PinDown1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinDown1.png; sourceTree = "<group>"; };
+		5E4F504A1355C11500173E71 /* PinDown2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinDown2.png; sourceTree = "<group>"; };
+		5E4F504B1355C11500173E71 /* PinDown3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinDown3.png; sourceTree = "<group>"; };
+		5E4F504C1355C11500173E71 /* PinFloating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinFloating.png; sourceTree = "<group>"; };
+		5E4F504D1355C11500173E71 /* PinShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinShadow.png; sourceTree = "<group>"; };
+		5E522344134DBBCA00C6940C /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		5E522345134DBBCB00C6940C /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		5E52234B134DCC9E00C6940C /* apmarker4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apmarker4@2x.png"; path = "Images/apmarker4@2x.png"; sourceTree = "<group>"; };
+		5E52234C134DCC9E00C6940C /* sitemarker4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sitemarker4@2x.png"; path = "Images/sitemarker4@2x.png"; sourceTree = "<group>"; };
+		5E52234F134DE06200C6940C /* YouAreHereAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouAreHereAnnotation.h; sourceTree = "<group>"; };
+		5E522350134DE06200C6940C /* YouAreHereAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouAreHereAnnotation.m; sourceTree = "<group>"; };
+		5E522352134E367E00C6940C /* gps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gps.png; path = Images/gps.png; sourceTree = "<group>"; };
+		5E522353134E367E00C6940C /* gps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gps@2x.png"; path = "Images/gps@2x.png"; sourceTree = "<group>"; };
+		5E52235A134E493100C6940C /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = table.png; path = Images/table.png; sourceTree = "<group>"; };
+		5E52235B134E493100C6940C /* table@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "table@2x.png"; path = "Images/table@2x.png"; sourceTree = "<group>"; };
+		5E72220A1376D6110073BF85 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
+		5E72220B1376D6110073BF85 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icon@2x.png"; sourceTree = "<group>"; };
+		5E752857134CD97100B2C2B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5EA1BA631332716E00CA6C95 /* eduroam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eduroam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA1BA671332716E00CA6C95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5EA1BA691332716E00CA6C95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5EA1BA6B1332716E00CA6C95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5EA1BA6F1332716E00CA6C95 /* eduroam Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eduroam Companion-Info.plist"; sourceTree = "<group>"; };
+		5EA1BA711332716E00CA6C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EA1BA731332716E00CA6C95 /* eduroam Companion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eduroam Companion-Prefix.pch"; sourceTree = "<group>"; };
+		5EA1BA741332716E00CA6C95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EA1BA761332716E00CA6C95 /* eduroamCompanionAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eduroamCompanionAppDelegate.h; sourceTree = "<group>"; };
+		5EA1BA771332716E00CA6C95 /* eduroamCompanionAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eduroamCompanionAppDelegate.m; sourceTree = "<group>"; };
+		5EA1BA7A1332716E00CA6C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5EA1BA811332716E00CA6C95 /* eduroam CompanionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eduroam CompanionTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA1BA891332716E00CA6C95 /* eduroam CompanionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eduroam CompanionTests-Info.plist"; sourceTree = "<group>"; };
+		5EA1BA8B1332716E00CA6C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EA1BA8D1332716E00CA6C95 /* eduroam CompanionTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eduroam CompanionTests-Prefix.pch"; sourceTree = "<group>"; };
+		5EA1BA8E1332716E00CA6C95 /* Eduroam_App3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eduroam_App3Tests.h; sourceTree = "<group>"; };
+		5EA1BA901332716E00CA6C95 /* Eduroam_App3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eduroam_App3Tests.m; sourceTree = "<group>"; };
+		5EA1BA9A13334D9100CA6C95 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		5EA1BA9C13334E9300CA6C95 /* TagCheckSiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCheckSiteViewController.h; sourceTree = "<group>"; };
+		5EA1BA9D13334E9300CA6C95 /* TagCheckSiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCheckSiteViewController.m; sourceTree = "<group>"; };
+		5EA1BA9E13334E9400CA6C95 /* TagCheckSiteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCheckSiteViewController.xib; sourceTree = "<group>"; };
+		5EA1BAA21333531F00CA6C95 /* MapNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapNavController.h; sourceTree = "<group>"; };
+		5EA1BAA31333531F00CA6C95 /* MapNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapNavController.m; sourceTree = "<group>"; };
+		5EA1BAA61333544500CA6C95 /* SiteSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteSelectionViewController.h; sourceTree = "<group>"; };
+		5EA1BAA71333544500CA6C95 /* SiteSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteSelectionViewController.m; sourceTree = "<group>"; };
+		5EA1BAA91333581200CA6C95 /* SiteSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteSelectionView.xib; sourceTree = "<group>"; };
+		5EA1BAAB133358DA00CA6C95 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5EA1BAF7133361C900CA6C95 /* SiteDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteDetailsViewController.h; sourceTree = "<group>"; };
+		5EA1BAF8133361CA00CA6C95 /* SiteDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteDetailsViewController.m; sourceTree = "<group>"; };
+		5EA1BAFA1333622300CA6C95 /* SiteDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteDetails.xib; sourceTree = "<group>"; };
+		5EB5C6C613648E29001FF04A /* PermissionOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionOverlay.h; sourceTree = "<group>"; };
+		5EB5C6C713648E29001FF04A /* PermissionOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionOverlay.m; sourceTree = "<group>"; };
+		5EB5C6C91364A5E2001FF04A /* APDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDetailsViewController.h; sourceTree = "<group>"; };
+		5EB5C6CA1364A5E3001FF04A /* APDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDetailsViewController.m; sourceTree = "<group>"; };
+		5EB5C6CB1364A5E3001FF04A /* APDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APDetails.xib; sourceTree = "<group>"; };
+		5EB6CDD4135EF313000A2B51 /* eduroamnegsmalltrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eduroamnegsmalltrans.png; sourceTree = "<group>"; };
+		5EB6CDD5135EF313000A2B51 /* eduroamnegsmalltrans@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eduroamnegsmalltrans@2x.png"; sourceTree = "<group>"; };
+		5EBB804A1342082A00E15DA1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		5EE4A732137BF1A600F7E4F2 /* infotabbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infotabbutton.png; path = Images/infotabbutton.png; sourceTree = "<group>"; };
+		5EE4A733137BF1A600F7E4F2 /* infotabbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "infotabbutton@2x.png"; path = "Images/infotabbutton@2x.png"; sourceTree = "<group>"; };
+		5EE4A737137BF1B200F7E4F2 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Images/Icon-72.png"; sourceTree = "<group>"; };
+		5EE4A738137BF1B200F7E4F2 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Images/Icon-Small-50.png"; sourceTree = "<group>"; };
+		5EE4A739137BF1B200F7E4F2 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Images/Icon-Small.png"; sourceTree = "<group>"; };
+		5EE4A73A137BF1B200F7E4F2 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Images/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		5EE4A73B137BF1B200F7E4F2 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Images/iTunesArtwork.png; sourceTree = "<group>"; };
+		5EE4A742137BF61400F7E4F2 /* InfoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoMainViewController.h; sourceTree = "<group>"; };
+		5EE4A743137BF61400F7E4F2 /* InfoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoMainViewController.m; sourceTree = "<group>"; };
+		5EE4A744137BF61400F7E4F2 /* InfoMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoMain.xib; sourceTree = "<group>"; };
+		5EE4A795137C1F9900F7E4F2 /* info.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = info.css; path = www/info.css; sourceTree = "<group>"; };
+		5EE4A796137C1F9900F7E4F2 /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = info.html; path = www/info.html; sourceTree = "<group>"; };
+		5EE4A799137C367100F7E4F2 /* janet2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = janet2x.png; path = www/janet2x.png; sourceTree = "<group>"; };
+		5EE7884C1334BC6B009C07BD /* eduroam.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = eduroam.sqlite; sourceTree = "<group>"; };
+		5EE7884F1334BCEB009C07BD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5EE7885F1334C7B0009C07BD /* SiteAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteAnnotation.h; sourceTree = "<group>"; };
+		5EE788601334C7B1009C07BD /* SiteAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteAnnotation.m; sourceTree = "<group>"; };
+		5EF803511345042D00C785A1 /* APAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotations.h; sourceTree = "<group>"; };
+		5EF803521345042D00C785A1 /* APAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnnotations.m; sourceTree = "<group>"; };
+		5EF803551345056B00C785A1 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		5EF803561345056C00C785A1 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		5EF8035813475CE700C785A1 /* apmarker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apmarker.png; path = Images/apmarker.png; sourceTree = "<group>"; };
+		5EF80362134765BF00C785A1 /* john.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = john.jpg; path = Images/john.jpg; sourceTree = "<group>"; };
+		5EF80372134893FB00C785A1 /* apmarker2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apmarker2.png; path = Images/apmarker2.png; sourceTree = "<group>"; };
+		5EF803741348963B00C785A1 /* apmarker3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apmarker3.png; path = Images/apmarker3.png; sourceTree = "<group>"; };
+		5EF803751348963B00C785A1 /* sitemarker2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sitemarker2.png; path = Images/sitemarker2.png; sourceTree = "<group>"; };
+		5EF803761348963B00C785A1 /* sitemarker3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sitemarker3.png; path = Images/sitemarker3.png; sourceTree = "<group>"; };
+		5EF8037B1348C18700C785A1 /* apmarker4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apmarker4.png; path = Images/apmarker4.png; sourceTree = "<group>"; };
+		5EF8037C1348C18700C785A1 /* sitemarker4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sitemarker4.png; path = Images/sitemarker4.png; sourceTree = "<group>"; };
+		762B9BF2145EE54B0006A001 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "eduroam Companion.xcodeproj/Settings.bundle"; sourceTree = "<group>"; };
+		763E97A5145ED6EA00F5CBF4 /* Eduroam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Eduroam.entitlements; sourceTree = "<group>"; };
+		76E82E57144F015800CE2253 /* uos2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uos2x.png; path = www/uos2x.png; sourceTree = "<group>"; };
+		76FCB2251483E5F4007DA322 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		76FCB2261483E5F4007DA322 /* LIBRARIES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LIBRARIES; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EA1BA601332716E00CA6C95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4F50351354AFF100173E71 /* QuartzCore.framework in Frameworks */,
+				5E4819D013530EDC00851F67 /* SystemConfiguration.framework in Frameworks */,
+				5E752858134CD97100B2C2B3 /* CoreLocation.framework in Frameworks */,
+				5EBB804B1342082A00E15DA1 /* libsqlite3.0.dylib in Frameworks */,
+				5EE788501334BCEB009C07BD /* libsqlite3.dylib in Frameworks */,
+				5EA1BAAC133358DA00CA6C95 /* MapKit.framework in Frameworks */,
+				5EA1BA681332716E00CA6C95 /* UIKit.framework in Frameworks */,
+				5EA1BA6A1332716E00CA6C95 /* Foundation.framework in Frameworks */,
+				5EA1BA6C1332716E00CA6C95 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA1BA7D1332716E00CA6C95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA1BA821332716E00CA6C95 /* UIKit.framework in Frameworks */,
+				5EA1BA831332716E00CA6C95 /* Foundation.framework in Frameworks */,
+				5EA1BA841332716E00CA6C95 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E17E4E813350C9900D174D0 /* Initialisation */ = {
+			isa = PBXGroup;
+			children = (
+				5E17E4EA13350CF000D174D0 /* InitViewController.h */,
+				5E17E4EB13350CF000D174D0 /* InitViewController.m */,
+				5E17E4ED13350E7700D174D0 /* InitView.xib */,
+			);
+			name = Initialisation;
+			sourceTree = "<group>";
+		};
+		5E17E53F13355CC500D174D0 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				5E17E54013355FAD00D174D0 /* SynthesiseSingleton.h */,
+				5E17E5431335605700D174D0 /* DatabaseManager.h */,
+				5E17E5441335605700D174D0 /* DatabaseManager.m */,
+				5E4819CC1353009A00851F67 /* Reachability.h */,
+				5E4819CD1353009A00851F67 /* Reachability.m */,
+				5E17E5461335612000D174D0 /* NetworkJSON.h */,
+				5E17E5471335612000D174D0 /* NetworkJSON.m */,
+				5E522344134DBBCA00C6940C /* LocationManager.h */,
+				5E522345134DBBCB00C6940C /* LocationManager.m */,
+				5E4819C01352124F00851F67 /* NetworkManager.h */,
+				5E4819C11352124F00851F67 /* NetworkManager.m */,
+				5E4819D113532A5200851F67 /* NetworkJSONProtocol.h */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		5E4819D213532B7000851F67 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				5E4819D313532B8600851F67 /* JSON.h */,
+				5E4819D413532B8600851F67 /* NSObject+SBJSON.h */,
+				5E4819D513532B8600851F67 /* NSObject+SBJSON.m */,
+				5E4819D613532B8600851F67 /* NSString+SBJSON.h */,
+				5E4819D713532B8600851F67 /* NSString+SBJSON.m */,
+				5E4819D813532B8600851F67 /* SBJsonBase.h */,
+				5E4819D913532B8600851F67 /* SBJsonBase.m */,
+				5E4819DA13532B8600851F67 /* SBJsonParser.h */,
+				5E4819DB13532B8600851F67 /* SBJsonParser.m */,
+				5E4819DC13532B8600851F67 /* SBJsonWriter.h */,
+				5E4819DD13532B8600851F67 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		5E4F50361354C8DB00173E71 /* Box Of Goodies */ = {
+			isa = PBXGroup;
+			children = (
+				5E4F50421355B81B00173E71 /* DDAnnotation.h */,
+				5E4F50431355B81C00173E71 /* DDAnnotation.m */,
+				5E4F50441355B81C00173E71 /* DDAnnotationView.h */,
+				5E4F50451355B81D00173E71 /* DDAnnotationView.m */,
+				5E4F50371354C92300173E71 /* GeneralButton.h */,
+				5E4F50381354C92300173E71 /* GeneralButton.m */,
+				5E3CBE54135877C00028BE7F /* LoadOverlay.h */,
+				5E3CBE55135877C00028BE7F /* LoadOverlay.m */,
+				5EB5C6C613648E29001FF04A /* PermissionOverlay.h */,
+				5EB5C6C713648E29001FF04A /* PermissionOverlay.m */,
+			);
+			name = "Box Of Goodies";
+			sourceTree = "<group>";
+		};
+		5E7222081376D4290073BF85 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				5EE4A737137BF1B200F7E4F2 /* Icon-72.png */,
+				5EE4A738137BF1B200F7E4F2 /* Icon-Small-50.png */,
+				5EE4A739137BF1B200F7E4F2 /* Icon-Small.png */,
+				5EE4A73A137BF1B200F7E4F2 /* Icon-Small@2x.png */,
+				5EE4A73B137BF1B200F7E4F2 /* iTunesArtwork.png */,
+				5E72220A1376D6110073BF85 /* Icon.png */,
+				5E72220B1376D6110073BF85 /* Icon@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		5EA1BA581332716E00CA6C95 = {
+			isa = PBXGroup;
+			children = (
+				76FCB2251483E5F4007DA322 /* COPYING */,
+				76FCB2261483E5F4007DA322 /* LIBRARIES */,
+				762B9BF2145EE54B0006A001 /* Settings.bundle */,
+				5E4F50341354AFF000173E71 /* QuartzCore.framework */,
+				5E4819CF13530EDC00851F67 /* SystemConfiguration.framework */,
+				5E752857134CD97100B2C2B3 /* CoreLocation.framework */,
+				5EA1BA881332716E00CA6C95 /* Supporting Files */,
+				5EBB804A1342082A00E15DA1 /* libsqlite3.0.dylib */,
+				5EA1BAAB133358DA00CA6C95 /* MapKit.framework */,
+				5EA1BA6D1332716E00CA6C95 /* eduroam Companion */,
+				5EA1BA871332716E00CA6C95 /* eduroam Companion Tests */,
+				5EA1BA661332716E00CA6C95 /* Frameworks */,
+				5EA1BA641332716E00CA6C95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EA1BA641332716E00CA6C95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EA1BA631332716E00CA6C95 /* eduroam.app */,
+				5EA1BA811332716E00CA6C95 /* eduroam CompanionTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EA1BA661332716E00CA6C95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EE7884F1334BCEB009C07BD /* libsqlite3.dylib */,
+				5EA1BA671332716E00CA6C95 /* UIKit.framework */,
+				5EA1BA691332716E00CA6C95 /* Foundation.framework */,
+				5EA1BA6B1332716E00CA6C95 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EA1BA6D1332716E00CA6C95 /* eduroam Companion */ = {
+			isa = PBXGroup;
+			children = (
+				763E97A5145ED6EA00F5CBF4 /* Eduroam.entitlements */,
+				5EE4A741137BF5E800F7E4F2 /* Info Views */,
+				5E4F50361354C8DB00173E71 /* Box Of Goodies */,
+				5E4819D213532B7000851F67 /* JSON */,
+				5E17E53F13355CC500D174D0 /* Singletons */,
+				5EA1BA761332716E00CA6C95 /* eduroamCompanionAppDelegate.h */,
+				5EA1BA771332716E00CA6C95 /* eduroamCompanionAppDelegate.m */,
+				5EA1BA791332716E00CA6C95 /* MainWindow.xib */,
+				5EA1BAA113334EA200CA6C95 /* Tag Views */,
+				5E17E4E813350C9900D174D0 /* Initialisation */,
+				5EA1BAA51333532700CA6C95 /* Map Views */,
+				5EA1BA6E1332716E00CA6C95 /* Supporting Files */,
+			);
+			name = "eduroam Companion";
+			path = "Eduroam App3";
+			sourceTree = "<group>";
+		};
+		5EA1BA6E1332716E00CA6C95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EF8037A1348C16D00C785A1 /* Images */,
+				5EE7884C1334BC6B009C07BD /* eduroam.sqlite */,
+				5EA1BA9A13334D9100CA6C95 /* default.png */,
+				5EA1BA6F1332716E00CA6C95 /* eduroam Companion-Info.plist */,
+				5EA1BA701332716E00CA6C95 /* InfoPlist.strings */,
+				5EA1BA731332716E00CA6C95 /* eduroam Companion-Prefix.pch */,
+				5EA1BA741332716E00CA6C95 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EA1BA871332716E00CA6C95 /* eduroam Companion Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5EA1BA8E1332716E00CA6C95 /* Eduroam_App3Tests.h */,
+				5EA1BA901332716E00CA6C95 /* Eduroam_App3Tests.m */,
+			);
+			name = "eduroam Companion Tests";
+			path = "Eduroam App3Tests";
+			sourceTree = "<group>";
+		};
+		5EA1BA881332716E00CA6C95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EA1BA891332716E00CA6C95 /* eduroam CompanionTests-Info.plist */,
+				5EA1BA8A1332716E00CA6C95 /* InfoPlist.strings */,
+				5EA1BA8D1332716E00CA6C95 /* eduroam CompanionTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "Eduroam App3Tests";
+			sourceTree = "<group>";
+		};
+		5EA1BAA113334EA200CA6C95 /* Tag Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EA1BA9C13334E9300CA6C95 /* TagCheckSiteViewController.h */,
+				5EA1BA9D13334E9300CA6C95 /* TagCheckSiteViewController.m */,
+				5EA1BA9E13334E9400CA6C95 /* TagCheckSiteViewController.xib */,
+				5E4F502A1354480800173E71 /* TagPickSiteViewController.h */,
+				5E4F502B1354480800173E71 /* TagPickSiteViewController.m */,
+				5E4F502C1354480800173E71 /* TagPickSiteViewController.xib */,
+				5E4F502F1354489500173E71 /* TagCheckLocationViewController.h */,
+				5E4F50301354489500173E71 /* TagCheckLocationViewController.m */,
+				5E4F50311354489500173E71 /* TagCheckLocationViewController.xib */,
+			);
+			name = "Tag Views";
+			sourceTree = "<group>";
+		};
+		5EA1BAA51333532700CA6C95 /* Map Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EA1BAA21333531F00CA6C95 /* MapNavController.h */,
+				5EA1BAA31333531F00CA6C95 /* MapNavController.m */,
+				5EA1BAA61333544500CA6C95 /* SiteSelectionViewController.h */,
+				5EA1BAA71333544500CA6C95 /* SiteSelectionViewController.m */,
+				5EE7885F1334C7B0009C07BD /* SiteAnnotation.h */,
+				5EE788601334C7B1009C07BD /* SiteAnnotation.m */,
+				5EA1BAA91333581200CA6C95 /* SiteSelectionView.xib */,
+				5EA1BAF7133361C900CA6C95 /* SiteDetailsViewController.h */,
+				5EA1BAF8133361CA00CA6C95 /* SiteDetailsViewController.m */,
+				5EA1BAFA1333622300CA6C95 /* SiteDetails.xib */,
+				5EF803511345042D00C785A1 /* APAnnotations.h */,
+				5EF803521345042D00C785A1 /* APAnnotations.m */,
+				5EF803551345056B00C785A1 /* Annotation.h */,
+				5EF803561345056C00C785A1 /* Annotation.m */,
+				5E52234F134DE06200C6940C /* YouAreHereAnnotation.h */,
+				5E522350134DE06200C6940C /* YouAreHereAnnotation.m */,
+				5EB5C6C91364A5E2001FF04A /* APDetailsViewController.h */,
+				5EB5C6CA1364A5E3001FF04A /* APDetailsViewController.m */,
+				5EB5C6CB1364A5E3001FF04A /* APDetails.xib */,
+			);
+			name = "Map Views";
+			sourceTree = "<group>";
+		};
+		5EE4A741137BF5E800F7E4F2 /* Info Views */ = {
+			isa = PBXGroup;
+			children = (
+				76E82E57144F015800CE2253 /* uos2x.png */,
+				5EE4A799137C367100F7E4F2 /* janet2x.png */,
+				5EE4A795137C1F9900F7E4F2 /* info.css */,
+				5EE4A796137C1F9900F7E4F2 /* info.html */,
+				5EE4A742137BF61400F7E4F2 /* InfoMainViewController.h */,
+				5EE4A743137BF61400F7E4F2 /* InfoMainViewController.m */,
+				5EE4A744137BF61400F7E4F2 /* InfoMain.xib */,
+			);
+			name = "Info Views";
+			sourceTree = "<group>";
+		};
+		5EF8037A1348C16D00C785A1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5EE4A732137BF1A600F7E4F2 /* infotabbutton.png */,
+				5EE4A733137BF1A600F7E4F2 /* infotabbutton@2x.png */,
+				5E7222081376D4290073BF85 /* icons */,
+				5E4D67561366F21B0027971A /* hi.png */,
+				5E4D67571366F21B0027971A /* hi@2x.png */,
+				5E4D67581366F21B0027971A /* lo.png */,
+				5E4D67591366F21B0027971A /* lo@2x.png */,
+				5E4D675213660FD60027971A /* background1.png */,
+				5E4D675313660FD60027971A /* background1@2x.png */,
+				5E4D674E13660B200027971A /* mapicon1.png */,
+				5E4D674F13660B200027971A /* mapicon1@2x.png */,
+				5E4D674A1366088C0027971A /* eduroamTag.png */,
+				5E4D674B1366088C0027971A /* eduroamTag@2x.png */,
+				5E4D67451366048D0027971A /* eduroamSites.png */,
+				5E4D67461366048D0027971A /* eduroamSites@2x.png */,
+				5EB6CDD4135EF313000A2B51 /* eduroamnegsmalltrans.png */,
+				5EB6CDD5135EF313000A2B51 /* eduroamnegsmalltrans@2x.png */,
+				5E4F50481355C11500173E71 /* Pin.png */,
+				5E4F50491355C11500173E71 /* PinDown1.png */,
+				5E4F504A1355C11500173E71 /* PinDown2.png */,
+				5E4F504B1355C11500173E71 /* PinDown3.png */,
+				5E4F504C1355C11500173E71 /* PinFloating.png */,
+				5E4F504D1355C11500173E71 /* PinShadow.png */,
+				5E52235A134E493100C6940C /* table.png */,
+				5E52235B134E493100C6940C /* table@2x.png */,
+				5E522352134E367E00C6940C /* gps.png */,
+				5E522353134E367E00C6940C /* gps@2x.png */,
+				5E52234B134DCC9E00C6940C /* apmarker4@2x.png */,
+				5E52234C134DCC9E00C6940C /* sitemarker4@2x.png */,
+				5EF8037B1348C18700C785A1 /* apmarker4.png */,
+				5EF8037C1348C18700C785A1 /* sitemarker4.png */,
+				5EF803741348963B00C785A1 /* apmarker3.png */,
+				5EF803751348963B00C785A1 /* sitemarker2.png */,
+				5EF803761348963B00C785A1 /* sitemarker3.png */,
+				5EF80372134893FB00C785A1 /* apmarker2.png */,
+				5EF80362134765BF00C785A1 /* john.jpg */,
+				5EF8035813475CE700C785A1 /* apmarker.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EA1BA621332716E00CA6C95 /* eduroam Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA1BA941332716E00CA6C95 /* Build configuration list for PBXNativeTarget "eduroam Companion" */;
+			buildPhases = (
+				5EA1BA5F1332716E00CA6C95 /* Sources */,
+				5EA1BA601332716E00CA6C95 /* Frameworks */,
+				5EA1BA611332716E00CA6C95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eduroam Companion";
+			productName = "Eduroam App3";
+			productReference = 5EA1BA631332716E00CA6C95 /* eduroam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EA1BA801332716E00CA6C95 /* eduroam CompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA1BA971332716E00CA6C95 /* Build configuration list for PBXNativeTarget "eduroam CompanionTests" */;
+			buildPhases = (
+				5EA1BA7C1332716E00CA6C95 /* Sources */,
+				5EA1BA7D1332716E00CA6C95 /* Frameworks */,
+				5EA1BA7E1332716E00CA6C95 /* Resources */,
+				5EA1BA7F1332716E00CA6C95 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EA1BA861332716E00CA6C95 /* PBXTargetDependency */,
+			);
+			name = "eduroam CompanionTests";
+			productName = "Eduroam App3Tests";
+			productReference = 5EA1BA811332716E00CA6C95 /* eduroam CompanionTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EA1BA5A1332716E00CA6C95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5EA1BA5D1332716E00CA6C95 /* Build configuration list for PBXProject "eduroam Companion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5EA1BA581332716E00CA6C95;
+			productRefGroup = 5EA1BA641332716E00CA6C95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EA1BA621332716E00CA6C95 /* eduroam Companion */,
+				5EA1BA801332716E00CA6C95 /* eduroam CompanionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EA1BA611332716E00CA6C95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA1BA721332716E00CA6C95 /* InfoPlist.strings in Resources */,
+				5EA1BA7B1332716E00CA6C95 /* MainWindow.xib in Resources */,
+				5EA1BA9B13334D9100CA6C95 /* default.png in Resources */,
+				5EA1BAA013334E9400CA6C95 /* TagCheckSiteViewController.xib in Resources */,
+				5EA1BAAA1333581200CA6C95 /* SiteSelectionView.xib in Resources */,
+				5EA1BAFB1333622400CA6C95 /* SiteDetails.xib in Resources */,
+				5EE7884D1334BC6B009C07BD /* eduroam.sqlite in Resources */,
+				5E17E4EE13350E7700D174D0 /* InitView.xib in Resources */,
+				5EF8035913475CE700C785A1 /* apmarker.png in Resources */,
+				5EF80363134765BF00C785A1 /* john.jpg in Resources */,
+				5EF80373134893FC00C785A1 /* apmarker2.png in Resources */,
+				5EF803771348963B00C785A1 /* apmarker3.png in Resources */,
+				5EF803781348963B00C785A1 /* sitemarker2.png in Resources */,
+				5EF803791348963B00C785A1 /* sitemarker3.png in Resources */,
+				5EF8037D1348C18700C785A1 /* apmarker4.png in Resources */,
+				5EF8037E1348C18700C785A1 /* sitemarker4.png in Resources */,
+				5E52234D134DCC9F00C6940C /* apmarker4@2x.png in Resources */,
+				5E52234E134DCC9F00C6940C /* sitemarker4@2x.png in Resources */,
+				5E522354134E367E00C6940C /* gps.png in Resources */,
+				5E522355134E367E00C6940C /* gps@2x.png in Resources */,
+				5E52235C134E493100C6940C /* table.png in Resources */,
+				5E52235D134E493100C6940C /* table@2x.png in Resources */,
+				5E4F502E1354480800173E71 /* TagPickSiteViewController.xib in Resources */,
+				5E4F50331354489500173E71 /* TagCheckLocationViewController.xib in Resources */,
+				5E4F504E1355C11500173E71 /* Pin.png in Resources */,
+				5E4F504F1355C11500173E71 /* PinDown1.png in Resources */,
+				5E4F50501355C11500173E71 /* PinDown2.png in Resources */,
+				5E4F50511355C11500173E71 /* PinDown3.png in Resources */,
+				5E4F50521355C11500173E71 /* PinFloating.png in Resources */,
+				5E4F50531355C11500173E71 /* PinShadow.png in Resources */,
+				5EB6CDD6135EF313000A2B51 /* eduroamnegsmalltrans.png in Resources */,
+				5EB6CDD7135EF313000A2B51 /* eduroamnegsmalltrans@2x.png in Resources */,
+				5EB5C6CD1364A5E3001FF04A /* APDetails.xib in Resources */,
+				5E4D67471366048D0027971A /* eduroamSites.png in Resources */,
+				5E4D67481366048D0027971A /* eduroamSites@2x.png in Resources */,
+				5E4D674C1366088C0027971A /* eduroamTag.png in Resources */,
+				5E4D674D1366088C0027971A /* eduroamTag@2x.png in Resources */,
+				5E4D675013660B200027971A /* mapicon1.png in Resources */,
+				5E4D675113660B200027971A /* mapicon1@2x.png in Resources */,
+				5E4D675413660FD60027971A /* background1.png in Resources */,
+				5E4D675513660FD60027971A /* background1@2x.png in Resources */,
+				5E4D675A1366F21B0027971A /* hi.png in Resources */,
+				5E4D675B1366F21B0027971A /* hi@2x.png in Resources */,
+				5E4D675C1366F21B0027971A /* lo.png in Resources */,
+				5E4D675D1366F21B0027971A /* lo@2x.png in Resources */,
+				5E72220C1376D6110073BF85 /* Icon.png in Resources */,
+				5E72220D1376D6110073BF85 /* Icon@2x.png in Resources */,
+				5EE4A734137BF1A600F7E4F2 /* infotabbutton.png in Resources */,
+				5EE4A735137BF1A600F7E4F2 /* infotabbutton@2x.png in Resources */,
+				5EE4A73C137BF1B200F7E4F2 /* Icon-72.png in Resources */,
+				5EE4A73D137BF1B200F7E4F2 /* Icon-Small-50.png in Resources */,
+				5EE4A73E137BF1B200F7E4F2 /* Icon-Small.png in Resources */,
+				5EE4A73F137BF1B200F7E4F2 /* Icon-Small@2x.png in Resources */,
+				5EE4A740137BF1B200F7E4F2 /* iTunesArtwork.png in Resources */,
+				5EE4A746137BF61400F7E4F2 /* InfoMain.xib in Resources */,
+				5EE4A797137C1F9900F7E4F2 /* info.css in Resources */,
+				5EE4A798137C1F9900F7E4F2 /* info.html in Resources */,
+				5EE4A79B137C367200F7E4F2 /* janet2x.png in Resources */,
+				76E82E58144F015800CE2253 /* uos2x.png in Resources */,
+				762B9BF3145EE54B0006A001 /* Settings.bundle in Resources */,
+				76FCB2271483E5F4007DA322 /* COPYING in Resources */,
+				76FCB2281483E5F4007DA322 /* LIBRARIES in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA1BA7E1332716E00CA6C95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA1BA8C1332716E00CA6C95 /* InfoPlist.strings in Resources */,
+				5EA1BA8F1332716E00CA6C95 /* Eduroam_App3Tests.h in Resources */,
+				762B9BF4145EE54B0006A001 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EA1BA7F1332716E00CA6C95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EA1BA5F1332716E00CA6C95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA1BA751332716E00CA6C95 /* main.m in Sources */,
+				5EA1BA781332716E00CA6C95 /* eduroamCompanionAppDelegate.m in Sources */,
+				5EA1BA9F13334E9400CA6C95 /* TagCheckSiteViewController.m in Sources */,
+				5EA1BAA41333531F00CA6C95 /* MapNavController.m in Sources */,
+				5EA1BAA81333544500CA6C95 /* SiteSelectionViewController.m in Sources */,
+				5EA1BAF9133361CB00CA6C95 /* SiteDetailsViewController.m in Sources */,
+				5EE788611334C7B1009C07BD /* SiteAnnotation.m in Sources */,
+				5E17E4EC13350CF000D174D0 /* InitViewController.m in Sources */,
+				5E17E5451335605800D174D0 /* DatabaseManager.m in Sources */,
+				5E17E5481335612100D174D0 /* NetworkJSON.m in Sources */,
+				5EF803531345042E00C785A1 /* APAnnotations.m in Sources */,
+				5EF803571345056E00C785A1 /* Annotation.m in Sources */,
+				5E522346134DBBCB00C6940C /* LocationManager.m in Sources */,
+				5E522351134DE06300C6940C /* YouAreHereAnnotation.m in Sources */,
+				5E4819C21352124F00851F67 /* NetworkManager.m in Sources */,
+				5E4819CE1353009A00851F67 /* Reachability.m in Sources */,
+				5E4819DE13532B8600851F67 /* NSObject+SBJSON.m in Sources */,
+				5E4819DF13532B8600851F67 /* NSString+SBJSON.m in Sources */,
+				5E4819E013532B8600851F67 /* SBJsonBase.m in Sources */,
+				5E4819E113532B8600851F67 /* SBJsonParser.m in Sources */,
+				5E4819E213532B8600851F67 /* SBJsonWriter.m in Sources */,
+				5E4F502D1354480800173E71 /* TagPickSiteViewController.m in Sources */,
+				5E4F50321354489500173E71 /* TagCheckLocationViewController.m in Sources */,
+				5E4F50391354C92300173E71 /* GeneralButton.m in Sources */,
+				5E4F50461355B81E00173E71 /* DDAnnotation.m in Sources */,
+				5E4F50471355B81E00173E71 /* DDAnnotationView.m in Sources */,
+				5E3CBE56135877C00028BE7F /* LoadOverlay.m in Sources */,
+				5EB5C6C813648E29001FF04A /* PermissionOverlay.m in Sources */,
+				5EB5C6CC1364A5E3001FF04A /* APDetailsViewController.m in Sources */,
+				5EE4A745137BF61400F7E4F2 /* InfoMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA1BA7C1332716E00CA6C95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA1BA911332716E00CA6C95 /* Eduroam_App3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EA1BA861332716E00CA6C95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EA1BA621332716E00CA6C95 /* eduroam Companion */;
+			targetProxy = 5EA1BA851332716E00CA6C95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EA1BA701332716E00CA6C95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA1BA711332716E00CA6C95 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5EA1BA791332716E00CA6C95 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA1BA7A1332716E00CA6C95 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5EA1BA8A1332716E00CA6C95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA1BA8B1332716E00CA6C95 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EA1BA921332716E00CA6C95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "eduroam Companion";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EA1BA931332716E00CA6C95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "eduroam Companion";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		5EA1BA951332716E00CA6C95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Eduroam App3/Eduroam.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eduroam App3/eduroam Companion-Prefix.pch";
+				INFOPLIST_FILE = "Eduroam App3/eduroam Companion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = eduroam;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5EA1BA961332716E00CA6C95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Eduroam App3/Eduroam.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eduroam App3/eduroam Companion-Prefix.pch";
+				INFOPLIST_FILE = "Eduroam App3/eduroam Companion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = eduroam;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5EA1BA981332716E00CA6C95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Eduroam App3.app/Eduroam App3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eduroam App3Tests/eduroam CompanionTests-Prefix.pch";
+				INFOPLIST_FILE = "Eduroam App3Tests/eduroam CompanionTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "eduroam CompanionTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5EA1BA991332716E00CA6C95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Eduroam App3.app/Eduroam App3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eduroam App3Tests/eduroam CompanionTests-Prefix.pch";
+				INFOPLIST_FILE = "Eduroam App3Tests/eduroam CompanionTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "eduroam CompanionTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		763E97A2145EB38100F5CBF4 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "eduroam Companion";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = "Ad Hoc";
+		};
+		763E97A3145EB38100F5CBF4 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Eduroam App3/Eduroam.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eduroam App3/eduroam Companion-Prefix.pch";
+				INFOPLIST_FILE = "Eduroam App3/eduroam Companion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = eduroam;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		763E97A4145EB38100F5CBF4 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Eduroam App3.app/Eduroam App3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eduroam App3Tests/eduroam CompanionTests-Prefix.pch";
+				INFOPLIST_FILE = "Eduroam App3Tests/eduroam CompanionTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "eduroam CompanionTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Ad Hoc";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EA1BA5D1332716E00CA6C95 /* Build configuration list for PBXProject "eduroam Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA1BA921332716E00CA6C95 /* Debug */,
+				5EA1BA931332716E00CA6C95 /* Release */,
+				763E97A2145EB38100F5CBF4 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA1BA941332716E00CA6C95 /* Build configuration list for PBXNativeTarget "eduroam Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA1BA951332716E00CA6C95 /* Debug */,
+				5EA1BA961332716E00CA6C95 /* Release */,
+				763E97A3145EB38100F5CBF4 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA1BA971332716E00CA6C95 /* Build configuration list for PBXNativeTarget "eduroam CompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA1BA981332716E00CA6C95 /* Debug */,
+				5EA1BA991332716E00CA6C95 /* Release */,
+				763E97A4145EB38100F5CBF4 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EA1BA5A1332716E00CA6C95 /* Project object */;
+}

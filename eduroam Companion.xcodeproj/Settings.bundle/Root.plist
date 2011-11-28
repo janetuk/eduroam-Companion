@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Permission to Tag</string>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+            <key>Key</key>
+            <string>permission</string>
+            <key>DefaultValue</key>
+            <integer>0</integer>
+            <key>Values</key>
+            <array>
+                <integer>1</integer>
+                <integer>0</integer>
+            </array>
+            <key>Titles</key>
+            <array>
+                <string>Yes</string>
+                <string>No</string>
+            </array>
+		</dict>
+        <dict>
+			<key>Title</key>
+			<string>Access Point Confidence Filter</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+            <key>FooterText</key>
+            <string>Restrict the access points you see by adjusting the confidence rating. Moving the slider to the right will display fewer access points, but they will be of a high confidence rating.</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<real>0.1</real>
+			<key>Key</key>
+			<string>rating</string>
+			<key>MaximumValue</key>
+			<integer>1</integer>
+			<key>MaximumValueImage</key>
+			<string>hi.png</string>
+			<key>MinimumValue</key>
+			<integer>0</integer>
+			<key>MinimumValueImage</key>
+			<string>lo.png</string>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+		</dict>
+        <dict>
+            
+        </dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>
