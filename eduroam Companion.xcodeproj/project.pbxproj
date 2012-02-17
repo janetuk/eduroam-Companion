@@ -112,6 +112,7 @@
 		5EF8037E1348C18700C785A1 /* sitemarker4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF8037C1348C18700C785A1 /* sitemarker4.png */; };
 		762B9BF3145EE54B0006A001 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 762B9BF2145EE54B0006A001 /* Settings.bundle */; };
 		762B9BF4145EE54B0006A001 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 762B9BF2145EE54B0006A001 /* Settings.bundle */; };
+		76A5559614EE753C00053A41 /* eduroam2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A5559514EE753C00053A41 /* eduroam2x.png */; };
 		76E82E58144F015800CE2253 /* uos2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E82E57144F015800CE2253 /* uos2x.png */; };
 		76FCB2271483E5F4007DA322 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 76FCB2251483E5F4007DA322 /* COPYING */; };
 		76FCB2281483E5F4007DA322 /* LIBRARIES in Resources */ = {isa = PBXBuildFile; fileRef = 76FCB2261483E5F4007DA322 /* LIBRARIES */; };
@@ -268,6 +269,7 @@
 		5EF8037C1348C18700C785A1 /* sitemarker4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sitemarker4.png; path = Images/sitemarker4.png; sourceTree = "<group>"; };
 		762B9BF2145EE54B0006A001 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "eduroam Companion.xcodeproj/Settings.bundle"; sourceTree = "<group>"; };
 		763E97A5145ED6EA00F5CBF4 /* Eduroam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Eduroam.entitlements; sourceTree = "<group>"; };
+		76A5559514EE753C00053A41 /* eduroam2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eduroam2x.png; sourceTree = "<group>"; };
 		76E82E57144F015800CE2253 /* uos2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uos2x.png; path = www/uos2x.png; sourceTree = "<group>"; };
 		76FCB2251483E5F4007DA322 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		76FCB2261483E5F4007DA322 /* LIBRARIES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LIBRARIES; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 		5EE4A741137BF5E800F7E4F2 /* Info Views */ = {
 			isa = PBXGroup;
 			children = (
+				76A5559514EE753C00053A41 /* eduroam2x.png */,
 				76E82E57144F015800CE2253 /* uos2x.png */,
 				5EE4A799137C367100F7E4F2 /* janet2x.png */,
 				5EE4A795137C1F9900F7E4F2 /* info.css */,
@@ -707,6 +710,7 @@
 				762B9BF3145EE54B0006A001 /* Settings.bundle in Resources */,
 				76FCB2271483E5F4007DA322 /* COPYING in Resources */,
 				76FCB2281483E5F4007DA322 /* LIBRARIES in Resources */,
+				76A5559614EE753C00053A41 /* eduroam2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
