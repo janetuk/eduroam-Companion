@@ -713,7 +713,8 @@
             //Error checking the date of the last update
             //Proceed to main app
             waitingForUpdate = NO;
-            self.statusLabel.text = @"Error Updating";
+            self.statusLabel.text = @"Error Updating: reverting database";
+            [dbManager copyDatabaseIfNeeded:TRUE];
             [self continueToMainApp];
             break;
         case 3:
@@ -769,19 +770,22 @@
             break;
         case 11:
             //Failed to update the database, continue to main app
-            self.statusLabel.text = @"Error Updating Database";
+            self.statusLabel.text = @"Error Updating Database: reverting";
             waitingForUpdate = NO;
+            [dbManager copyDatabaseIfNeeded:TRUE];
             [self continueToMainApp];
         case 12:
             //Failed to get the lastupdate date of the sites table
-            self.statusLabel.text = @"Error Updating";
+            self.statusLabel.text = @"Error Updating: reverting";
             waitingForUpdate = NO;
+            [dbManager copyDatabaseIfNeeded:TRUE];
             [self continueToMainApp];
             break;
         case 13:
             //FAiled to get the lastupdate date of the subsite table
             self.statusLabel.text = @"Error Updating";
             waitingForUpdate = NO;
+            [dbManager copyDatabaseIfNeeded:TRUE];
             [self continueToMainApp];
             break;
         case 14:

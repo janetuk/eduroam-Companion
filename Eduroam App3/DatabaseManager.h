@@ -43,6 +43,7 @@
 + (DatabaseManager* )sharedDatabaseManager;
 - (void) initDBPath;
 - (void) copyDatabaseIfNeeded;
+- (void) copyDatabaseIfNeeded:(BOOL)force;
 - (int) insertQuery:(NSString*) query withParameters:(NSArray*) parameters ofTypes:(NSString*)types;
 - (int) insertQuery:(NSString*) query;
 - (NSMutableDictionary*) selectQuery:(NSString*)query withParameters:(NSArray*)parameters ofTypes:(NSString*)types andColumnTypes:(NSString*)cTypes;

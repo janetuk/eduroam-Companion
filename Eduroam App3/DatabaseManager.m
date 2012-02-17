@@ -80,14 +80,39 @@ sqlite3* db;
 //-----------------------------------------------------------------------
 // Check if database exists in Documents folder. If not, copy from Bundle
 //-----------------------------------------------------------------------
-- (void)copyDatabaseIfNeeded{
+
+-(void) copyDatabaseIfNeeded {
+    [self copyDatabaseIfNeeded:0];
+}
+
+- (void)copyDatabaseIfNeeded:(BOOL)force{
+    BOOL f;
+    f = force;
     
     //NEED TO CHECK DATABASE VERSIONS IF A DB ALREADY EXISTS IN THE DOCUMENTS FOLDER
+    
+    NSLog(@"Examining database state.");
     
     NSFileManager* fileManager = [NSFileManager defaultManager];
     NSString* dbPath = self.DBPath;
     NSString* bundleDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"eduroam.sqlite"];
 
+    if (f)
+    {
+        NSLog(@"Reverting to default database.");
+        NSError* error;
+        [fileManager removeItemAtPath:dbPath error:Nil];
+        
+        if(![fileManager copyItemAtPath:bundleDBPath toPath:dbPath error:&error]){
+            //Failure
+            NSLog(@"Error 1: Database Copy Failure - %@", [error localizedDescription]);
+        }
+        
+        NSLog(@"Success");
+
+        return;
+    }
+    
     
     if( ![fileManager fileExistsAtPath:dbPath]){
         NSError* error;
